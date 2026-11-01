@@ -1,0 +1,10 @@
+DNS klartext-digital.ch vor der Umstellung (01.11.2026), Hostinger
+A      @     2.57.91.91 (Parkseite)          TTL 50
+CNAME  www   klartext-digital.ch             TTL 300
+MX     @     1 smtp.google.com               TTL 3600   (NICHT aendern)
+TXT    @     v=spf1 include:_spf.google.com ~all          (NICHT aendern)
+TXT    @     google-site-verification=Wz89aa2rkXO_8Dsnq3Me1cmjXHzPQc8aE12RC8Z5i4U
+TXT    @     google-site-verification=eJSidf_2VFTVMWH2dkrYOhBC02WUnIDECsjME2w17j0
+TXT    _dmarc  v=DMARC1; p=none; ...
+TXT    google._domainkey  DKIM (Google)
+Rueckweg: A @ wieder auf 2.57.91.91, CNAME www auf klartext-digital.ch
