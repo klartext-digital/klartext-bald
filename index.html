@@ -23,7 +23,7 @@ body{background:var(--tinte);color:var(--creme);font-family:Outfit,system-ui,san
 /* weicher oranger Schein hinten rechts, damit die Flaeche nicht tot wirkt */
 body::before{content:"";position:fixed;inset:auto -20vmax -30vmax auto;width:70vmax;height:70vmax;border-radius:50%;
   background:radial-gradient(closest-side,rgb(245 165 36 / .22),transparent);pointer-events:none;z-index:-1}
-header{padding:clamp(28px,5vw,56px) 20px 0;display:grid;justify-items:center}
+header{padding:clamp(22px,4vw,44px) clamp(20px,5vw,72px)}
 header img{display:block;width:clamp(150px,16vw,220px);height:auto}
 main{display:grid;align-content:center;justify-items:center;text-align:center;gap:clamp(22px,3vw,34px);padding:0 20px;max-width:1100px;margin:0 auto}
 .pille{font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
