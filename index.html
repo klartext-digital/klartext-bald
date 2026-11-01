@@ -49,6 +49,9 @@ h1 .marker{isolation:isolate;display:inline-block}
 footer{padding:clamp(22px,4vw,40px) clamp(20px,5vw,72px);font-size:14px;line-height:1.6;color:rgb(247 247 245 / .5);
   display:flex;flex-wrap:wrap;justify-content:center;text-align:center;gap:4px 18px}
 footer a{color:inherit}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.marker img{display:inline-block;height:.86em;width:auto;vertical-align:-.12em}
+h1 .marker{padding:.08em .34em .06em .26em;margin-left:.05em}
 @media (prefers-reduced-motion:reduce){.marker::before{animation:none;clip-path:none}.wege a{transition:none}}
 </style>
 </head>
@@ -56,7 +59,7 @@ footer a{color:inherit}
 <header><img src="logo.svg" alt="klartext. digital" width="766" height="314"></header>
 <main>
   <span class="pille">Kommt bald</span>
-  <h1>Gleich gibt’s hier <span class="marker">Klartext.</span></h1>
+  <h1>Gleich gibt’s hier <span class="marker"><span class="sr">Klartext</span><img src="klartext-schrift.svg" alt="" aria-hidden="true"></span>.</h1>
   <p class="lead">Unsere neue Website ist fast fertig. Ihr braucht schon jetzt Unterstützung bei Branding, Social Media, Website oder Werbung? Schreibt uns einfach.</p>
   <div class="wege">
     <a class="voll" href="mailto:hallo@klartext-digital.ch">hallo@klartext-digital.ch
