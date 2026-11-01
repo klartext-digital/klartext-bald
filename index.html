@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Klartext Digital | Marketingagentur in Pratteln</title>
+<meta name="description" content="Klartext Digital, Marketingagentur aus Pratteln: Branding, Social Media, Websites, Performance Marketing und E-Mail Marketing. Die neue Website kommt bald.">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#0E0D0B">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="favicon-180.png">
+<link rel="preload" href="fonts/outfit.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:Outfit;src:url(fonts/outfit.woff2) format('woff2');font-weight:100 900;font-display:swap}
+:root{--tinte:#0E0D0B;--creme:#F7F7F5;--orange:#F5A524;--grau:rgb(247 247 245 / .64)}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%}
+body{background:var(--tinte);color:var(--creme);font-family:Outfit,system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;display:grid;grid-template-rows:auto 1fr auto;min-height:100svh;overflow-x:hidden}
+/* weicher oranger Schein hinten rechts, damit die Flaeche nicht tot wirkt */
+body::before{content:"";position:fixed;inset:auto -20vmax -30vmax auto;width:70vmax;height:70vmax;border-radius:50%;
+  background:radial-gradient(closest-side,rgb(245 165 36 / .22),transparent);pointer-events:none;z-index:-1}
+header{padding:clamp(22px,4vw,44px) clamp(20px,5vw,72px)}
+header img{display:block;width:clamp(150px,16vw,220px);height:auto}
+main{display:grid;align-content:center;gap:clamp(22px,3vw,36px);padding:0 clamp(20px,5vw,72px);max-width:1180px}
+.pille{justify-self:start;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  padding:9px 16px;border-radius:999px;background:rgb(247 247 245 / .1);color:var(--orange)}
+h1{font-weight:800;font-size:clamp(44px,8.4vw,128px);line-height:.98;letter-spacing:-.035em;text-wrap:balance}
+.marker{position:relative;white-space:nowrap;color:var(--tinte);padding:0 .14em}
+.marker::before{content:"";position:absolute;inset:.1em -.06em .02em -.04em;z-index:-1;
+  background:url(bilder/marker.webp) center/100% 100% no-repeat;transform:rotate(-1.5deg);
+  clip-path:inset(0 100% 0 0);animation:wisch .9s .35s cubic-bezier(.22,1,.36,1) forwards}
+h1 .marker{isolation:isolate;display:inline-block}
+.marker{position:relative;z-index:0}
+@keyframes wisch{to{clip-path:inset(0 0 0 0)}}
+.lead{max-width:44ch;font-size:clamp(17px,1.5vw,21px);line-height:1.55;color:var(--grau)}
+.wege{display:flex;flex-wrap:wrap;gap:12px;margin-top:4px}
+.wege a{display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:999px;
+  font-weight:600;font-size:17px;text-decoration:none;transition:background .25s,color .25s,transform .25s}
+.wege a:hover,.wege a:focus-visible{transform:translateY(-2px)}
+.voll{background:var(--orange);color:var(--tinte)}
+.voll:hover,.voll:focus-visible{background:var(--creme)}
+.rand{color:var(--creme);box-shadow:inset 0 0 0 1.5px rgb(247 247 245 / .35)}
+.rand:hover,.rand:focus-visible{background:var(--creme);color:var(--tinte)}
+.wege svg{width:18px;height:18px}
+footer{padding:clamp(22px,4vw,40px) clamp(20px,5vw,72px);font-size:14px;line-height:1.6;color:rgb(247 247 245 / .5);
+  display:flex;flex-wrap:wrap;gap:4px 18px}
+footer a{color:inherit}
+@media (prefers-reduced-motion:reduce){.marker::before{animation:none;clip-path:none}.wege a{transition:none}}
+</style>
+</head>
+<body>
+<header><img src="logo.svg" alt="klartext. digital" width="766" height="314"></header>
+<main>
+  <span class="pille">Kommt bald</span>
+  <h1>Gleich gibt’s hier <span class="marker">Klartext.</span></h1>
+  <p class="lead">Unsere neue Website ist fast fertig. Bis dahin erreicht ihr uns direkt, für Branding, Social Media, Websites, Ads und E-Mail Marketing.</p>
+  <div class="wege">
+    <a class="voll" href="mailto:hallo@klartext-digital.ch">hallo@klartext-digital.ch
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+    <a class="rand" href="https://www.instagram.com/klartextdigital/" rel="noopener">Instagram
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+  </div>
+</main>
+<footer>
+  <span>Klartext Digital GmbH (in Gründung)</span>
+  <span>Lohagstrasse 15, 4133 Pratteln</span>
+  <a href="mailto:hallo@klartext-digital.ch">hallo@klartext-digital.ch</a>
+</footer>
+</body>
+</html>
